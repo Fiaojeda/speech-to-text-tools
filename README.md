@@ -1,8 +1,8 @@
-# speech-to-text-tools
+# Speech-to-text-tools
 
-## TXT to Word Converter
+## `TXT` to `DOCX` Converter
 
-This Python script converts a plain text file (.txt) into a Microsoft Word document (.docx). It ensures that the content from the text file is transferred as a single paragraph in the Word document, maintaining encoding compatibility for special characters.
+This Python script converts a text file (.txt) into a Microsoft Word document (.docx). It ensures that the content from the text file is transferred as a single paragraph in the Word document, maintaining encoding compatibility for special characters.
 
 ### How It Works
 
@@ -32,11 +32,11 @@ This Python script converts a plain text file (.txt) into a Microsoft Word docum
 Run the script to seamlessly convert your text files into Word documents with a simple, automated process!
 
 
-# SRT to DOCX Converter
+## `SRT` to `DOCX` Converter
 
-This Python script converts a SubRip Subtitle (SRT) file into a formatted Microsoft Word document (DOCX). It extracts timestamps and subtitle text from the SRT file, formats the timestamps in bold, and organizes the text into paragraphs in the DOCX file.
+This Python script converts a SubRip Subtitle (SRT) file into a formatted Microsoft Word document (.docx). It extracts timestamps and subtitle text from the SRT file, formats the timestamps in bold, and organizes the text into paragraphs in the DOCX file.
 
-## How It Works
+### How It Works
 
 1. **Input File**: Place your `.srt` file in the same directory as the script and ensure the `audio_track` variable matches your file's name.
 2. **Processing**: The script reads the SRT file line by line:
@@ -49,7 +49,7 @@ This Python script converts a SubRip Subtitle (SRT) file into a formatted Micros
 - `write_to_doc(doc, timestamp, subtitle_text)`: Writes formatted content to the DOCX file.
 - `srt_to_docx(srt_file, docx_file)`: Handles the conversion process and saves the DOCX file.
 
-## Requirements
+### Requirements
 - Python 3.x
 - `python-docx` library (`pip install python-docx`)
 
