@@ -1,5 +1,31 @@
 # Speech-to-text-tools
 
+This tool is designed to help in the **post-processing of output files from Whisper**, an audio transcription model. Whisper generates `.txt` or `.srt` files as transcription outputs, and this script helps convert `.txt` files into a more professional and editable format (.docx). 
+
+## Set up
+
+Install whisper: https://github.com/openai/whisper
+
+### To run Whisper with Command Line Interface (CLI)
+
+`whisper audio.m4a --model turbo --language Spanish --output_format srt --output_dir output --word_timestamps True`
+
+•	Turbo model is used as it offers faster transcription speed with a minimal degradation in accuracy in languages other than english.
+
+•	Specify the language of the audio
+
+•	Specify the output format (`.txt`, `.srt`)
+
+•	Specify the directory of the output
+
+•	Impression of time stamps in the transcript
+
+•	`whisper --help` for additional commands 
+
+### To run covertion of files
+
+`python txt_to_doc.py` or `python srt_to_doc.py`
+
 ## `TXT` to `DOCX` Converter
 
 This Python script converts a text file (.txt) into a Microsoft Word document (.docx). It ensures that the content from the text file is transferred as a single paragraph in the Word document, maintaining encoding compatibility for special characters.
